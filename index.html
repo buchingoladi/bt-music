@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Buchi Ngoladi, Temple Okosun">
+    <title>Music Share</title>
+
+    <!-- Bootstrap4 Album template will be customized to achieve our goal. -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style_main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">BT Music</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HTML requirements 1, 2, & 3 -->
+    <div class="container">
+        <section class="jumbotron text-center">
+            <form>
+                <div class="form-group row">
+                    <label for="artist"
+                           class="col-sm-2 col-form-label align-text-bottom text-right align-text-bottom">Artist:
+                    </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="artist" placeholder="Enter the Artist Name"
+                               required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="song" class="col-sm-2 col-form-label text-right align-text-bottom">Song: </label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="song" placeholder="Enter the Song Title"
+                               required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="genre" class="col-sm-2 col-form-label text-right align-text-bottom">Genre: </label>
+                    <div class="col-sm-10">
+                        <select class="form-control form-control-lg" id="genre" required>
+                            <option value="" disabled selected hidden>Select a Genre</option>
+                            <option value="Rock">Rock</option>
+                            <option value="Pop">Pop</option>
+                            <option value="Jazz">Jazz</option>
+                            <option value="Classical">Classical</option>
+                            <option value="Blues">Blues</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div>
+                        <button type="submit" class="btn btn-primary btn-lg">Search</button>
+                    </div>
+                </div>
+            </form>
+
+        </section>
+    </div>
+
+    <!-- HTML requirement 4 -->
+    <div class="container">
+        <div class="row text-center text-lg-left">
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/whitney.jpg" alt="" height="306" width="420">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/AaronNeville_Christmas_News.jpg" alt=""
+                         height="306" width="420">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/hillsong.jpg" alt="" height="306" width="420">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/lucky-dube.jpg" alt="" height="306"
+                         width="420">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/2pac.jpg" alt="" height="306" width="420">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="images/bob-marley.jpg" alt="" height="306"
+                         width="420">
+                </a>
+            </div>
+
+        </div>
+        <br>
+
+        <!-- HTML requirement 5 -->
+        <section>
+            <table class="table table-bordered table-striped">
+                <thead thead class="thead-light">
+                <tr>
+                    <th scope="col">Artist</th>
+                    <th scope="col">Song</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Album</th>
+                    <th scope="col">Rating</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Journey</td>
+                    <td>Dont Stop Believing</td>
+                    <td>3.50</td>
+                    <td>Greatest Hits</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Motley Crue</td>
+                    <td>Ten Seconds to Love</td>
+                    <td>3.50</td>
+                    <td>Shout at the Devil</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Journey</td>
+                    <td>Dont Stop Believing</td>
+                    <td>2.83</td>
+                    <td>Greatest Hits</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Def Leppard</td>
+                    <td>Photograph</td>
+                    <td>3.50</td>
+                    <td>Histeria</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Kiss</td>
+                    <td>Lord of thunder</td>
+                    <td>5.53</td>
+                    <td>Destroyer</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ozzy Osbourne</td>
+                    <td>Crazy Train</td>
+                    <td>4.50</td>
+                    <td>Wizard of Oz</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Guns N Roses</td>
+                    <td>Paradise City</td>
+                    <td>4.46</td>
+                    <td>Greatest Hits</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Scorpions</td>
+                    <td>Big city Nights</td>
+                    <td>3.50</td>
+                    <td>Love at First Sting</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Whitesnake</td>
+                    <td>Still of the Night</td>
+                    <td>3.50</td>
+                    <td>Whitesnake</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Motley Crue</td>
+                    <td>Too Fast for Love</td>
+                    <td>3.50</td>
+                    <td>Motley Crue</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Journey</td>
+                    <td>Dont Stop Believing</td>
+                    <td>3.50</td>
+                    <td>Greatest Hits</td>
+                    <td>5</td>
+                    <td class="text-center">
+                        <div class="float-right"><button type="button"
+                                                         class="btn btn-secondary">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is &copy; Bootstrap, you can download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
+                    href="../getting-started/introduction/">getting started guide</a>.</p>
+            <h4>George Brown College: FULL STACK DEVELOPMENT I CRN-17100-202001 Coursework</h4>
+            <h5>&copy; BT Music</h5>
+
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
